@@ -1,6 +1,6 @@
 package ocd.springframework.dependencyinjectionexamples.controllers;
 
-import ocd.springframework.dependencyinjectionexamples.services.GreetingServiceImpl;
+import ocd.springframework.dependencyinjectionexamples.services.SetterInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterInjectedController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new SetterInjectedGreetingService());
     }
 
     @Test
