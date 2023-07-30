@@ -1,7 +1,9 @@
 package ocd.springframework.dependencyinjectionexamples.controllers;
 
 import ocd.springframework.dependencyinjectionexamples.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
 
     // MOST preferred method
